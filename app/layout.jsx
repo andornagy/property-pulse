@@ -1,3 +1,5 @@
+import Navbar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import "@/assets/styles/globals.css";
 
 export const metadata = {
@@ -7,7 +9,11 @@ export const metadata = {
 const MainLayout = ({ children }) => {
 	return (
 		<html lang="en">
-			<body>{children}</body>
+			<body>
+				<Navbar />
+				<main>{children} </main>
+				<Footer />
+			</body>
 		</html>
 	);
 };
